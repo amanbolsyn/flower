@@ -367,4 +367,128 @@
     0% {transform: rotate(-40deg) scale(0.9);}
     100%{transform: rotate(-40deg) scale(1);}
 }
+
+.flower-leaf-13 {
+    position: absolute;
+     top:47%;
+     left:59%;
+     width: 55px;
+     height: 75px;
+     transform: rotate(0deg);
+     background-color: red;
+     background: linear-gradient(rgb(246, 50, 50), rgb(100, 0, 0));
+     border-radius: 5px 5px 40px 40px;
+     animation-name: flower-leaf-13;
+     animation-duration: 6s;
+     animation-iteration-count: 1;
+ }
+
+ @keyframes flower-leaf-13 {
+    0% {transform: rotate(10deg) scale(0.9);}
+    100%{transform: rotate(0deg) scale(1);}
+}
+
+ .flower-leaf-14 {
+    position: absolute;
+     top:47%;
+     left:65%;
+     width: 55px;
+     height: 75px;
+     transform: rotate(35deg);
+     background-color: red;
+     background: linear-gradient(rgb(246, 50, 50), rgb(100, 0, 0));
+     border-radius: 5px 5px 40px 40px;
+     animation-name: flower-leaf-14;
+     animation-duration: 6s;
+     animation-iteration-count: 1;
+ }
+
+ @keyframes flower-leaf-14 {
+    0% {transform: rotate(35deg) scale(0.9);}
+    100%{transform:  rotate(35deg) scale(1);}
+}
+
+ .flower-leaf-15 {
+    position: absolute;
+     top:49%;
+     left:67%;
+     width: 55px;
+     height: 75px;
+     transform: rotate(70deg);
+     background-color: red;
+     background: linear-gradient(rgb(246, 50, 50), rgb(100, 0, 0));
+     border-radius: 5px 5px 40px 40px;
+     animation-name: flower-leaf-15;
+     animation-duration: 6s;
+     animation-iteration-count: 1;
+ }
+
+ @keyframes flower-leaf-15 {
+    0% {transform: rotate(60deg) scale(0.9);}
+    100%{transform: rotate(70deg) scale(1);}
+}
+
+
+.flower-leaf-16 {
+    position: absolute;
+     top:49%;
+     left:58%;
+     width: 50px;
+     height: 65px;
+     transform: rotate(-20deg);
+     background-color: red;
+     background: linear-gradient(rgb(246, 50, 50), rgb(100, 0, 0));
+     border-radius: 5px 5px 40px 40px;
+     animation-name: flower-leaf-16;
+     animation-duration: 6s;
+     animation-iteration-count: 1;
+ }
+
+ @keyframes flower-leaf-16 {
+    0% {transform: rotate(-10deg) scale(0.9);}
+    100%{transform: rotate(-20deg) scale(1);}
+}
+
+ .flower-leaf-17 {
+    position: absolute;
+     top:52%;
+     left:67%;
+     width: 50px;
+     height: 65px;
+     transform: rotate(70deg);
+     background-color: red;
+     background: linear-gradient(rgb(246, 50, 50), rgb(100, 0, 0));
+     border-radius: 5px 5px 40px 40px;
+     animation-name: flower-leaf-17;
+     animation-duration: 6s;
+     animation-iteration-count: 1;
+ }
+
+ @keyframes flower-leaf-17 {
+    0% {transform: rotate(70deg) scale(0.9);}
+    100%{transform: rotate(70deg) scale(1);}
+}
+
+
+ .flower-leaf-18 {
+    position: absolute;
+     top:50%;
+     left:64%;
+     width: 58px;
+     height: 70px;
+     transform: rotate(30deg);
+     background-color: red;
+     background: linear-gradient(rgb(246, 50, 50), rgb(100, 0, 0));
+     border-radius: 5px 5px 40px 40px;
+     animation-name: flower-leaf-18;
+     animation-duration: 6s;
+     animation-iteration-count: 1;
+ }
+
+ @keyframes flower-leaf-18 {
+    0% {transform: rotate(20deg) scale(0.9);}
+    100%{transform: rotate(30deg) scale(1);}
+}
+
+ 
 }
