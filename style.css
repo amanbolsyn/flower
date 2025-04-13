@@ -12,7 +12,7 @@
     top: 40%;
     left: 50%;
     width: 10px;
-    height: 270px;
+    height: 290px;
     background: linear-gradient(to right,rgb(0, 155, 0), rgb(0, 78, 0));
 }
 
@@ -22,7 +22,7 @@
     left: 50%;
     width: 10px;
     height: 120px;
-    transform:rotate(30deg);
+    transform:rotate(35deg);
     transform-origin: bottom;
     background: linear-gradient(to right,rgb(0, 155, 0), rgb(0, 78, 0));
 }
@@ -77,6 +77,18 @@
 @keyframes bud-leaf-2 {
     0% {transform: rotate(40deg) scale(0.9) translateX(-5px);}
     100%{transform: rotate(55deg) scale(1) translateX(0px);}
+}
+
+.bud-leaf-3 {
+    position: absolute;
+    left:40%;
+    top: 62%;
+    width: 40px;
+    height: 60px;
+    transform: rotate(55deg);
+    background-color: green;
+    background: linear-gradient(rgb(0, 155, 0), rgb(0, 78, 0)) ;
+    border-radius: 0px 59px 20px 40px;
 }
 
 
