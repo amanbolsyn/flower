@@ -12,7 +12,7 @@
     top: 40%;
     left: 50%;
     width: 10px;
-    height: 290px;
+    height: 350px;
     background: linear-gradient(to right,rgb(0, 155, 0), rgb(0, 78, 0));
 }
 
@@ -32,7 +32,7 @@
     top: 60%;
     left: 50%;
     width: 10px;
-    height: 120px;
+    height: 130px;
     transform:rotate(-40deg);
     transform-origin: bottom;
     background: linear-gradient(to right,rgb(0, 155, 0), rgb(0, 78, 0));
@@ -89,7 +89,37 @@
     background-color: green;
     background: linear-gradient(rgb(0, 155, 0), rgb(0, 78, 0)) ;
     border-radius: 0px 59px 20px 40px;
+    animation-name: bud-leaf-2;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
 }
+
+@keyframes bud-leaf-3 {
+    0% {transform: rotate(40deg) scale(0.9) translateX(-5px);}
+    100%{transform: rotate(55deg) scale(1) translateX(0px);}
+}
+
+
+.bud-leaf-4 {
+    position: absolute;
+    left:53%;
+    top: 67%;
+    width: 40px;
+    height: 60px;
+    transform: rotate(60deg);
+    background-color: green;
+    background: linear-gradient(rgb(0, 155, 0), rgb(0, 78, 0)) ;
+    border-radius: 50px 0px 40px 20px;
+    animation-name: bud-leaf-4;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+
+@keyframes bud-leaf-4 {
+    0% {transform: rotate(40deg) scale(0.9) translateX(-5px);}
+    100%{transform: rotate(60deg) scale(1) translateX(0px);}
+}
+
 
 
 .flower-leaf-1 {
