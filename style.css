@@ -2,7 +2,6 @@
     margin: 0px;
  }
 
-
  main {
     width: 100vw;
     height: 100vh;
@@ -14,7 +13,7 @@
     left: 50%;
     width: 10px;
     height: 250px;
-    background-color: green;
+    background: linear-gradient(to right,rgb(0, 155, 0), rgb(0, 78, 0));
 }
 
 @media screen and (min-width: 375px) and (max-width:499px) {
@@ -27,6 +26,7 @@
     height: 50px;
     transform: rotate(-45deg);
     background-color: green;
+    background: linear-gradient(rgb(0, 155, 0), rgb(0, 78, 0)) ;
     border-radius: 0 50px 20px 40px;
 }
 
@@ -38,6 +38,7 @@
     height: 50px;
     transform: rotate(55deg);
     background-color: green;
+    background: linear-gradient(rgb(0, 155, 0), rgb(0, 78, 0)) ;
     border-radius: 50px 0px 40px 20px;
 }
 
@@ -56,7 +57,7 @@
 .flower-leaf-2 {
     position: absolute;
     top:32.5%;
-    left: 43.5%;
+    left: 44%;
     width: 60px;
     height:85px;
     background-color: red;
@@ -105,47 +106,13 @@
 .flower-leaf-6 {
     position: absolute;
     top:36%;
-    left: 43.5%;
+    left: 44%;
     width: 60px;
     height: 75px;
     background-color: red;
     background: linear-gradient(rgb(255, 43, 43), rgb(118, 0, 0));
     border-radius: 5px 5px 30px 30px;
 }
-/* 
-.flower-leaf-7 {
-    position: absolute;
-    top:39%;
-    right: 50%;
-    width: 50px;
-    height: 65px;
-    transform: rotate(-60deg);
-    background-color: red;
-    background: linear-gradient(rgb(255, 43, 43), rgb(118, 0, 0));
-}
-
-
-.flower-leaf-8 {
-    position: absolute;
-    top:39%;
-    left: 50%;
-    width: 50px;
-    height: 65px;
-    transform: rotate(60deg);
-    background-color: red;
-    background: linear-gradient(rgb(255, 43, 43), rgb(118, 0, 0))
-}
-
-.flower-leaf-9 {
-    position: absolute;
-    top:39%;
-    left:43%;
-    width: 60px;
-    height: 65px;
-    background-color: red;
-    background: linear-gradient(rgb(255, 43, 43), rgb(118, 0, 0))
-} */
-
 
 }
 
