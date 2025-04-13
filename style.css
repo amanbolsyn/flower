@@ -4,7 +4,7 @@
 
  main {
     width: 100vw;
-    height: 100vh;
+    height: inherit;
  }
 
 .bud-1 {
@@ -82,7 +82,7 @@
 .bud-leaf-3 {
     position: absolute;
     left:40%;
-    top: 62%;
+    top: 63%;
     width: 40px;
     height: 60px;
     transform: rotate(55deg);
