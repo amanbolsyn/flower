@@ -50,8 +50,23 @@
     height: 85px;
     transform: rotate(-25deg);
     background-color: red;
-    background: linear-gradient(rgb(255, 43, 43), rgb(118, 0, 0));
+    background: linear-gradient(rgb(246, 50, 50), rgb(100, 0, 0));
     border-radius: 5px 5px 40px 40px;
+    animation-name: flower-leaf-1;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes flower-leaf-1 {
+    0% {transform: rotate(-5deg);}
+    12%{transform: rotate(-7deg);}
+    25%{transform: rotate(-10deg);}
+    36%{transform: rotate(-13deg);}
+    50%{transform: rotate(-15deg);}
+    63%{transform: rotate(-17deg);}
+    75%{transform: rotate(-20deg);}
+    87%{transform: rotate(-23deg);}
+    100%{transform: rotate(-25deg);}
 }
 
 .flower-leaf-2 {
@@ -63,6 +78,7 @@
     background-color: red;
     background: linear-gradient(rgb(255, 43, 43), rgb(118, 0, 0));
     border-radius: 5px 5px 40px 40px;
+
 }
 
 
@@ -76,7 +92,20 @@
     background-color: red;
     background: linear-gradient(rgb(255, 43, 43), rgb(118, 0, 0));
     border-radius: 5px 5px 40px 40px;
+    animation-name: flower-leaf-3;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
 }
+
+@keyframes flower-leaf-3 {
+    0% {transform: rotate(5deg);}
+    25%{transform: rotate(10deg);}
+    50%{transform: rotate(15deg);}
+    75%{transform: rotate(20deg);}
+    100%{transform: rotate(25deg);}
+}
+
+
 
 .flower-leaf-4 {
     position: absolute;
@@ -86,8 +115,18 @@
     height: 75px;
     transform: rotate(-35deg);
     background-color: red;
-    background: linear-gradient(rgb(255, 43, 43), rgb(118, 0, 0));
+    background: linear-gradient(rgb(255, 43, 43), rgb(90, 0, 0));
     border-radius: 5px 5px 30px 30px;
+    animation-name: flower-leaf-4;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+   
+}
+
+@keyframes flower-leaf-4 {
+    0% {transform: rotate(-30deg);}
+    50%{transform: rotate(-33deg);}
+    100%{transform: rotate(-35deg);}
 }
 
 
@@ -97,10 +136,19 @@
     left: 50%;
     width: 60px;
     height: 75px;
-    transform: rotate(30deg);
+    transform: rotate(35deg);
     background-color: red;
     background: linear-gradient(rgb(255, 43, 43), rgb(118, 0, 0));
     border-radius: 5px 5px 30px 30px;    
+    animation-name: flower-leaf-5;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes flower-leaf-5 {
+    0% {transform: rotate(30deg);}
+    50%{transform: rotate(33deg);}
+    100%{transform: rotate(35deg);}
 }
 
 .flower-leaf-6 {
@@ -114,5 +162,5 @@
     border-radius: 5px 5px 30px 30px;
 }
 
-}
 
+}
