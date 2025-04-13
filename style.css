@@ -28,7 +28,17 @@
     background-color: green;
     background: linear-gradient(rgb(0, 155, 0), rgb(0, 78, 0)) ;
     border-radius: 0 50px 20px 40px;
+    animation-name: bud-leaf-1;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
 }
+
+@keyframes bud-leaf-1 {
+    0% {transform: rotate(-30deg) scale(0.9) translateX(5px);}
+    100%{transform: rotate(-45deg) scale(1) translateX(0px);}
+}
+
+
 
 .bud-leaf-2 {
     position: absolute;
@@ -40,7 +50,16 @@
     background-color: green;
     background: linear-gradient(rgb(0, 155, 0), rgb(0, 78, 0)) ;
     border-radius: 50px 0px 40px 20px;
+    animation-name: bud-leaf-2;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
 }
+
+@keyframes bud-leaf-2 {
+    0% {transform: rotate(40deg) scale(0.9) translateX(-5px);}
+    100%{transform: rotate(55deg) scale(1) translateX(0px);}
+}
+
 
 .flower-leaf-1 {
     position: absolute;
