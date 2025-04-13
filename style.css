@@ -53,20 +53,13 @@
     background: linear-gradient(rgb(246, 50, 50), rgb(100, 0, 0));
     border-radius: 5px 5px 40px 40px;
     animation-name: flower-leaf-1;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-iteration-count: 1;
 }
 
 @keyframes flower-leaf-1 {
-    0% {transform: rotate(-5deg);}
-    12%{transform: rotate(-7deg);}
-    25%{transform: rotate(-10deg);}
-    36%{transform: rotate(-13deg);}
-    50%{transform: rotate(-15deg);}
-    63%{transform: rotate(-17deg);}
-    75%{transform: rotate(-20deg);}
-    87%{transform: rotate(-23deg);}
-    100%{transform: rotate(-25deg);}
+    0% {transform: rotate(0deg) scale(0.9) translateX(15px);}
+    100%{transform: rotate(-25deg) scale(1) translateX(0px);}
 }
 
 .flower-leaf-2 {
@@ -78,7 +71,14 @@
     background-color: red;
     background: linear-gradient(rgb(255, 43, 43), rgb(118, 0, 0));
     border-radius: 5px 5px 40px 40px;
+    animation-name: flower-leaf-2;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
 
+@keyframes flower-leaf-2 {
+    0%{transform:scale(0.8)}
+    100%{transform: scale(1);}
 }
 
 
@@ -93,16 +93,13 @@
     background: linear-gradient(rgb(255, 43, 43), rgb(118, 0, 0));
     border-radius: 5px 5px 40px 40px;
     animation-name: flower-leaf-3;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-iteration-count: 1;
 }
 
 @keyframes flower-leaf-3 {
-    0% {transform: rotate(5deg);}
-    25%{transform: rotate(10deg);}
-    50%{transform: rotate(15deg);}
-    75%{transform: rotate(20deg);}
-    100%{transform: rotate(25deg);}
+    0% {transform: rotate(5deg) scale(0.9) translateX(-15px);}
+    100%{transform: rotate(25deg) scale(1) translateX(0px);}
 }
 
 
@@ -118,15 +115,14 @@
     background: linear-gradient(rgb(255, 43, 43), rgb(90, 0, 0));
     border-radius: 5px 5px 30px 30px;
     animation-name: flower-leaf-4;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-iteration-count: 1;
    
 }
 
 @keyframes flower-leaf-4 {
-    0% {transform: rotate(-30deg);}
-    50%{transform: rotate(-33deg);}
-    100%{transform: rotate(-35deg);}
+    0% {transform: rotate(-15deg) scale(0.9) translateX(15px);}
+    100%{transform: rotate(-35deg) scale(1) translateX(0px);}
 }
 
 
@@ -141,14 +137,13 @@
     background: linear-gradient(rgb(255, 43, 43), rgb(118, 0, 0));
     border-radius: 5px 5px 30px 30px;    
     animation-name: flower-leaf-5;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-iteration-count: 1;
 }
 
 @keyframes flower-leaf-5 {
-    0% {transform: rotate(30deg);}
-    50%{transform: rotate(33deg);}
-    100%{transform: rotate(35deg);}
+    0% {transform: rotate(15deg) scale(0.9) translateX(-15px);}
+    100%{transform: rotate(35deg) scale(1) translateX(0px);}
 }
 
 .flower-leaf-6 {
@@ -160,7 +155,14 @@
     background-color: red;
     background: linear-gradient(rgb(255, 43, 43), rgb(118, 0, 0));
     border-radius: 5px 5px 30px 30px;
+    animation-name: flower-leaf-6;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
 }
 
+@keyframes flower-leaf-6 {
+    0% {transform: scale(0.9);}
+    100%{transform: scale(1);}
+}
 
 }
