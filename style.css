@@ -5,14 +5,17 @@
  main {
     width: 100vw;
     height: 100vh;
+    background-color: #f4d58d;
  }
 
- .flower-container {
+ /* .flower-container {
     min-width: 375px;
     width: 400px;
     height: inherit;
     margin:auto;
- }
+ } */
+
+
 @media screen and (min-width: 375px) and (max-width:499px) {
 
 
@@ -21,7 +24,7 @@
     top: 40%;
     left: 50%;
     width: 10px;
-    height: 60%;
+    height:390px;
     background: linear-gradient(to right,rgb(0, 155, 0), rgb(0, 78, 0));
 }
 
