@@ -13,13 +13,15 @@
     height: inherit;
     margin:auto;
  }
+@media screen and (min-width: 375px) and (max-width:499px) {
+
 
 .bud-1 {
     position:absolute;
     top: 40%;
     left: 50%;
     width: 10px;
-    height: 55vh;
+    height: 60%;
     background: linear-gradient(to right,rgb(0, 155, 0), rgb(0, 78, 0));
 }
 
@@ -44,8 +46,6 @@
     transform-origin: bottom;
     background: linear-gradient(to right,rgb(0, 155, 0), rgb(0, 78, 0));
 }
-@media screen and (min-width: 375px) and (max-width:499px) {
-
 .bud-leaf-1 {
     position:absolute;
     right: 50%;
@@ -483,7 +483,7 @@
      left:64%;
      width: 58px;
      height: 70px;
-     transform: rotate(35deg);
+     transform: rotate(40deg);
      background-color: red;
      background: linear-gradient(rgb(246, 50, 50), rgb(100, 0, 0));
      border-radius: 5px 5px 40px 40px;
@@ -493,8 +493,8 @@
  }
 
  @keyframes flower-leaf-18 {
-    0% {transform: rotate(35deg) scale(0.9);}
-    100%{transform: rotate(35deg) scale(1);}
+    0% {transform: rotate(40deg) scale(0.9);}
+    100%{transform: rotate(40deg) scale(1);}
 }
 
  
