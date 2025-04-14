@@ -8,13 +8,23 @@
     background-color: #f4d58d;
  }
 
- /* .flower-container {
-    min-width: 375px;
-    width: 400px;
-    height: inherit;
-    margin:auto;
- } */
+#container {
+    display: none;
+ }
 
+ #click-me-bttn{
+    display:block;
+    margin:auto;
+    position: relative;
+    top: 50%;
+    text-decoration: none;
+    border: 2px solid rgb(220, 107, 107);
+    font-size:24px;
+    padding: 1rem;
+    border-radius: 1rem;;
+    background-color: rgb(249, 91, 91);
+    color: white
+ }
 
 @media screen and (min-width: 375px) and (max-width:499px) {
 
@@ -49,6 +59,8 @@
     transform-origin: bottom;
     background: linear-gradient(to right,rgb(0, 155, 0), rgb(0, 78, 0));
 }
+
+
 .bud-leaf-1 {
     position:absolute;
     right: 50%;
