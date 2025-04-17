@@ -4,72 +4,111 @@
 
  main {
     width: 100vw;
-    height: 100%;
-    /* background-color: #f4d58d; */
- }
-/* 
-#container {
-    display: none;
- } */
+    display: grid;
+    grid-template-areas: 
+    "rose-container";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    place-items: center;
+    height: 100vh;
+}
 
- /* #click-me-bttn{
-    display:block;
-    margin:auto;
+.rose-container{
+    grid-area:rose-container;
+}
+
+@media screen and (max-width: 374px) {
+    main {
+        display: none
+    }
+}
+
+/* FOR SMALL SCREENS */
+@media screen and (min-width: 375px) and (max-width:599px) {
+
+    .rose-container {
+        display:grid;
+        grid-template-areas: 
+        "rose-container-1";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        place-items: center;
+    }
+
+    .rose-container-1 {
+        grid-area: rose-container-1;
+    }
+
+    .rose-container-2, .rose-container-3 {
+        display:none;
+    }
+}
+
+/* FOR AVERAGE SCREENS */
+@media screen and (min-width:600px) and (max-width: 1439px){
+    .rose-container {
+        display:grid;
+        grid-template-areas: 
+        "rose-container-1 rose-container-2";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .rose-container-1 {
+        grid-area: rose-container-1;
+    }
+
+    .rose-container-2 {
+        grid-area: rose-container-2;
+    }
+
+    .rose-container-3 {
+        display: none;
+    }
+}
+
+/* FOR LARGE SCREENS */
+@media screen and (min-width:1440px) {
+    .rose-container {
+        display:grid;
+        grid-template-areas: 
+        "rose-container-1 rose-container-2 rose-container-3";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .rose-container-1 {
+        grid-area: rose-container-1;
+    }
+
+    .rose-container-2 {
+        grid-area: rose-container-2;
+    }
+
+    .rose-container-3 {
+        grid-area: rose-container-3;
+    }
+}
+
+.rose-container-1, .rose-container-2, .rose-container-3 {
+    width: 300px;
+    height: 500px;
     position: relative;
-    top: 50%;
-    text-decoration: none;
-    border: 2px solid rgb(220, 107, 107);
-    font-size:24px;
-    padding: 1rem;
-    border-radius: 1rem;;
-    background-color: rgb(249, 91, 91);
-    color: white
- } */
-
-
- /* h1 {
-   text-align: center;
-   margin-top: 150px;
-   font-size: 28px;
-   font-family: "Leckerli One", cursive;
-   animation-name: heading;
-   animation-duration: 4s;
-   animation-iteration-count: 1;
-   color: #2b2d42;
-   display:none
- } */
-
- /* @keyframes heading {
-    0%{font-size:24px; opacity: 1; display: block;}
-    100%{font-size: 32px; opacity: 0; display: none;}
- } */
-
-@media screen and (min-width: 375px) and (max-width:499px) {
+ }
 
 
 .bud-1 {
     position:absolute;
-    top: 40%;
+    top: 25%;
     left: 50%;
     width: 10px;
-    height:390px;
+    height:350px;
     background: linear-gradient(to right,rgb(0, 155, 0), rgb(0, 78, 0));
 }
 
 .bud-2 {
     position:absolute;
-    top: 52%;
-    left: 50%;
-    width: 10px;
-    height: 120px;
-    transform:rotate(35deg);
-    transform-origin: bottom;
-    background: linear-gradient(to right,rgb(0, 155, 0), rgb(0, 78, 0));
-}
-
-.bud-3 {
-    position:absolute;
-    top: 60%;
+    top: 45%;
     left: 50%;
     width: 10px;
     height: 130px;
@@ -79,10 +118,22 @@
 }
 
 
+.bud-3 {
+    position:absolute;
+    top: 35%;
+    left: 50%;
+    width: 10px;
+    height: 120px;
+    transform:rotate(35deg);
+    transform-origin: bottom;
+    background: linear-gradient(to right,rgb(0, 155, 0), rgb(0, 78, 0));
+}
+
+
 .bud-leaf-1 {
     position:absolute;
     right: 50%;
-    top: 50%;
+    top: 30%;
     width: 40px;
     height: 60px;
     transform: rotate(-45deg);
@@ -101,8 +152,8 @@
 
 .bud-leaf-2 {
     position: absolute;
-    left:53%;
-    top: 55%;
+    left:55%;
+    top: 40%;
     width: 40px;
     height: 60px;
     transform: rotate(55deg);
@@ -121,8 +172,8 @@
 
 .bud-leaf-3 {
     position: absolute;
-    left:40%;
-    top: 63%;
+    left:37%;
+    top: 50%;
     width: 40px;
     height: 60px;
     transform: rotate(55deg);
@@ -142,11 +193,11 @@
 
 .bud-leaf-4 {
     position: absolute;
-    left:53%;
-    top: 67%;
+    left:55%;
+    top: 60%;
     width: 40px;
     height: 60px;
-    transform: rotate(60deg);
+    transform: rotate(70deg);
     background-color: green;
     background: linear-gradient(rgb(0, 155, 0), rgb(0, 78, 0)) ;
     border-radius: 50px 0px 40px 20px;
@@ -157,14 +208,14 @@
 
 @keyframes bud-leaf-4 {
     0% {transform: rotate(40deg) scale(0.9) translateX(-5px);}
-    100%{transform: rotate(60deg) scale(1) translateX(0px);}
+    100%{transform: rotate(70deg) scale(1) translateX(0px);}
 }
 
 
 
 .flower-leaf-1 {
     position: absolute;
-    top:34%;
+    top:10%;
     right: 50%;
     width: 60px;
     height: 85px;
@@ -184,8 +235,8 @@
 
 .flower-leaf-2 {
     position: absolute;
-    top:32.5%;
-    left: 44%;
+    top:7%;
+    left: 42%;
     width: 60px;
     height:85px;
     background-color: red;
@@ -204,8 +255,8 @@
 
 .flower-leaf-3{
     position: absolute;
-    top:34%;
-    left: 50%;
+    top:10%;
+    left: 54%;
     width: 60px;
     height: 85px;
     transform: rotate(25deg);
@@ -220,13 +271,13 @@
 @keyframes flower-leaf-3 {
     0% {transform: rotate(5deg) scale(0.9) translateX(-15px);}
     100%{transform: rotate(25deg) scale(1) translateX(0px);}
-}
+} 
 
 
 
 .flower-leaf-4 {
     position: absolute;
-    top:36%;
+    top:13%;
     right: 50%;
     width: 60px;
     height: 75px;
@@ -248,8 +299,8 @@
 
 .flower-leaf-5 {
     position: absolute;
-    top:36%;
-    left: 50%;
+    top:13%;
+    left: 54%;
     width: 60px;
     height: 75px;
     transform: rotate(35deg);
@@ -268,8 +319,8 @@
 
 .flower-leaf-6 {
     position: absolute;
-    top:36%;
-    left: 44%;
+    top:13%;
+    left: 42%;
     width: 60px;
     height: 75px;
     background-color: red;
@@ -288,8 +339,8 @@
 
 .flower-leaf-7 {
     position: absolute;
-    top:60%;
-    right: 67%;
+    top:45%;
+    left: 5%;
     width: 55px;
     height: 70px;
     transform: rotate(-70deg);
@@ -308,8 +359,8 @@
 
 .flower-leaf-8 {
     position: absolute;
-    top:56%;
-    right: 59%;
+    top:39%;
+    right: 64%;
     width: 55px;
     height: 70px;
     transform: rotate(-5deg);
@@ -328,8 +379,8 @@
 
 .flower-leaf-9 {
    position: absolute;
-    top:57%;
-    right: 65%;
+    top:40%;
+    right: 73%;
     width: 55px;
     height: 70px;
     transform: rotate(-40deg);
@@ -348,8 +399,8 @@
 
 .flower-leaf-10 {
     position: absolute;
-    top:62%;
-    right: 65%;
+    top:50%;
+    right: 75%;
     width: 50px;
     height: 65px;
     transform: rotate(-90deg);
@@ -369,8 +420,8 @@
 
  .flower-leaf-11 {
     position: absolute;
-    top:58%;
-    right: 57%;
+    top: 42%;
+    right:60%;
     width: 50px;
     height: 65px;
     transform: rotate(15deg);
@@ -390,8 +441,8 @@
 
 .flower-leaf-12 {
     position: absolute;
-     top:60%;
-     right: 61%;
+     top:45%;
+     right: 68%;
      width: 55px;
      height: 65px;
      transform: rotate(-40deg);
@@ -410,8 +461,8 @@
 
 .flower-leaf-13 {
     position: absolute;
-     top:47%;
-     left:59%;
+     top:30%;
+     left:60%;
      width: 55px;
      height: 75px;
      transform: rotate(0deg);
@@ -430,8 +481,8 @@
 
  .flower-leaf-14 {
     position: absolute;
-     top:47%;
-     left:65%;
+     top:31%;
+     left:68%;
      width: 55px;
      height: 75px;
      transform: rotate(35deg);
@@ -450,8 +501,8 @@
 
  .flower-leaf-15 {
     position: absolute;
-     top:49%;
-     left:67%;
+     top:35%;
+     left:70%;
      width: 55px;
      height: 75px;
      transform: rotate(70deg);
@@ -471,7 +522,7 @@
 
 .flower-leaf-16 {
     position: absolute;
-     top:49%;
+     top:33%;
      left:58%;
      width: 50px;
      height: 65px;
@@ -491,11 +542,11 @@
 
  .flower-leaf-17 {
     position: absolute;
-     top:52%;
-     left:67%;
+     top:39%;
+     left:70%;
      width: 50px;
      height: 65px;
-     transform: rotate(70deg);
+     transform: rotate(80deg);
      background-color: red;
      background: linear-gradient(rgb(246, 50, 50), rgb(100, 0, 0));
      border-radius: 5px 5px 40px 40px;
@@ -506,14 +557,14 @@
 
  @keyframes flower-leaf-17 {
     0% {transform: rotate(50deg) scale(0.9);}
-    100%{transform: rotate(70deg) scale(1);}
+    100%{transform: rotate(80deg) scale(1);}
 }
 
 
  .flower-leaf-18 {
     position: absolute;
-     top:50%;
-     left:64%;
+     top:35%;
+     left:63%;
      width: 58px;
      height: 70px;
      transform: rotate(40deg);
@@ -531,4 +582,3 @@
 }
 
  
-}
